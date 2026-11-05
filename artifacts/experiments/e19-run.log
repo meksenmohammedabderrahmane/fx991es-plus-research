@@ -1,0 +1,75 @@
+[argv] #3: key 'model' already set
+inited hex editor!
+> dofile("../../tools/experiments/e19.lua")
+[emulib] loaded (manual-step debugger), helpers ready
+
+================================================================
+[E19] natural 0x2768 entry + FB watch — Wed Nov  4 00:19:25 2026
+================================================================
+[E19] settling 2,000,000 ticks ...
+[E19] settled: PC=004680 SP=8DA4 mode=05
+[E19] typing 100 '1' tokens (event-verified presses)
+[E19] typed 100 tokens; buffer head: 8154: 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31
+[E19] payload written to 0x8154..0x81B7; tail: 81B4: 31 30 EC 6C 00 00 00 00 00 00 00 00 00 00 00 00
+[E19] pressing [=] (code 0x30) ...
+[E19] entry pass at tick=8989418 SP=8D4C top=74 70 00 00 -> CSR forced to 1
+[E19] pressed [1] done tick=8997419; F830=08 F831=C3 F840=18 PC=000116
+[E19] pressed [2] done tick=9005419; F830=08 F831=C3 F840=18 PC=00013A
+[E19] pressed [5] done tick=9013419; F830=08 F831=C3 F840=18 PC=000120
+[E19] pressed [9] done tick=9021419; F830=08 F831=C3 F840=18 PC=000142
+[E19] trace size: 77727 transitions since entry
+[E19] getkeycode-window (0x0B45C..0x0B464) PC hits: 0
+[E19] after window: PC=000116 SP=8D4C F830=08 F831=C3 F840=18
+[E19] after tail: PC=000142 SP=8D4C
+[E19] stack at entry (0x8D4C): 8D4C: 00 00 00 00 00 00 F3 00 00 00 00 00 00 00 00 00
+[E19] last 40 PC transitions since entry:
+[E19]   t=10281372 PC=000130 SP=8D4C
+[E19]   t=10281373 PC=000132 SP=8D4C
+[E19]   t=10281374 PC=000134 SP=8D4C
+[E19]   t=10281375 PC=000136 SP=8D4C
+[E19]   t=10281376 PC=000138 SP=8D4C
+[E19]   t=10281377 PC=00013A SP=8D4C
+[E19]   t=10281380 PC=00013C SP=8D4C
+[E19]   t=10281381 PC=00013E SP=8D4C
+[E19]   t=10281382 PC=000140 SP=8D4C
+[E19]   t=10281383 PC=000142 SP=8D4C
+[E19]   t=10281385 PC=000144 SP=8D4C
+[E19]   t=10281386 PC=000146 SP=8D4C
+[E19]   t=10281387 PC=000148 SP=8D4C
+[E19]   t=10281388 PC=00014A SP=8D4C
+[E19]   t=10281389 PC=000110 SP=8D4C
+[E19]   t=10281392 PC=000112 SP=8D4C
+[E19]   t=10281393 PC=000114 SP=8D4C
+[E19]   t=10281394 PC=000116 SP=8D4C
+[E19]   t=10281395 PC=000118 SP=8D4C
+[E19]   t=10281396 PC=00011A SP=8D4C
+[E19]   t=10281397 PC=00011C SP=8D4C
+[E19]   t=10281398 PC=00011E SP=8D4C
+[E19]   t=10281399 PC=000120 SP=8D4C
+[E19]   t=10281400 PC=000122 SP=8D4C
+[E19]   t=10281401 PC=000124 SP=8D4C
+[E19]   t=10281402 PC=000126 SP=8D4C
+[E19]   t=10281403 PC=000128 SP=8D4C
+[E19]   t=10281404 PC=00012A SP=8D4C
+[E19]   t=10281405 PC=00012C SP=8D4C
+[E19]   t=10281406 PC=00012E SP=8D4C
+[E19]   t=10281407 PC=000130 SP=8D4C
+[E19]   t=10281408 PC=000132 SP=8D4C
+[E19]   t=10281409 PC=000134 SP=8D4C
+[E19]   t=10281410 PC=000136 SP=8D4C
+[E19]   t=10281411 PC=000138 SP=8D4C
+[E19]   t=10281412 PC=00013A SP=8D4C
+[E19]   t=10281415 PC=00013C SP=8D4C
+[E19]   t=10281416 PC=00013E SP=8D4C
+[E19]   t=10281417 PC=000140 SP=8D4C
+[E19]   t=10281418 PC=000142 SP=8D4C
+[E19] ==== E19 summary ====
+[E19] FB write events total (incl. cursor blink): 0
+  F830 (row 3): 08 C3 0C 30 C3 0C 30 C3 0C 30 C0 00 00 00 00 00
+  F840 (row 4): 18 41 04 10 41 04 10 41 04 10 40 00 00 00 00 00
+[E19] non-blink loader writes: -52
+[E19] final PC = 000142 SP = 8D4C
+[E19] total ticks: 10281419
+
+Goodbye
+A

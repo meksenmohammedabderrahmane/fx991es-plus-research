@@ -1,0 +1,24 @@
+000000   24 F4              MUL     ER4, R2
+000002   41 87              ADD     R7, R4
+000004   56 88              ADDC    R8, R5
+000006   00 69              ADDC    R9, #0
+000008   10 82              MOV     R2, R1
+00000A   34 F2              MUL     ER2, R3
+00000C   86 F2              ADD     ER2, ER8
+00000E   65 F0              MOV     ER0, ER6
+000010   1E F8              POP     ER8
+000012   2E F4              POP     XR4
+000014   1F FE              RT
+000016   5E FE              PUSH    ER14
+000018   1A AE              MOV     ER14, SP
+00001A   5E FC              PUSH    ER12
+00001C   5E F8              PUSH    ER8
+00001E   5E F4              PUSH    ER4
+000020   05 F8              MOV     ER8, ER0
+000022   05 F4              MOV     ER4, ER0
+000024   25 FC              MOV     ER12, ER2
+000026   09 CE              BC      AL, 0003Ah
+000028   45 F0              MOV     ER0, ER4
+00002A   C0 92              L       R2, [ER12]
+00002C   41 92              ST      R2, [ER4]
+00002E   81 E0              ADD     ER0, #1

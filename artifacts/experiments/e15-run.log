@@ -1,0 +1,99 @@
+inited hex editor!
+> dofile("../../tools/experiments/e15.lua")
+[emulib] loaded (manual-step debugger), helpers ready
+
+================================================================
+[E15] Data-loader ROP demo: framebuffer output from key pairs — Sun Nov  1 20:47:59 2026
+================================================================
+[E15] settling 2,000,000 ticks ...
+[E15] settled: PC=004680 SP=8DA4 mode=05
+[E15] injecting payload at 0x8154 and filling repeat region 0x8154..0x8DFF ...
+[E15]  8DA4 expect 6A 4F 30 30  got 6A 4F 30 30 OK
+[E15]  8D9E expect 30 30 8C 46  got 4F 8B 60 27 MISMATCH
+[E15] setting CSR=1 PC=0x54EE SP=0x8DA4 (chain entry) ...
+[E15] launched at tick 2000000
+[E15] first PC transitions (only changes logged, first 30 shown):
+[E15]   +00000001  CSR=1 PC=54EE SP=8DA4
+[E15]   +00139606  CSR=1 PC=54F0 SP=8DA8
+[E15]   +00139610  CSR=8 PC=8C26 SP=8DAC
+[E15]   +00139615  CSR=0 PC=8C28 SP=8DAC
+[E15]   +00139616  CSR=0 PC=8C2A SP=8DAC
+[E15]   +00139617  CSR=0 PC=8C2C SP=8DAC
+[E15]   +00139618  CSR=0 PC=8C2E SP=8DAC
+[E15]   +00139619  CSR=0 PC=8C30 SP=8DAC
+[E15]   +00139620  CSR=0 PC=44A8 SP=8DAC
+[E15]   +00139622  CSR=0 PC=44AA SP=8DA8
+[E15]   +00139626  CSR=0 PC=44AC SP=8DA6
+[E15]   +00139628  CSR=0 PC=44AE SP=8DA6
+[E15]   +00139630  CSR=0 PC=7E94 SP=8DA6
+[E15]   +00139632  CSR=0 PC=7E96 SP=8DA4
+[E15]   +00139634  CSR=0 PC=7E98 SP=8DA4
+[E15]   +00139636  CSR=0 PC=7E9A SP=8DA0
+[E15]   +00139640  CSR=0 PC=7E9C SP=8D9C
+[E15]   +00139644  CSR=0 PC=7E9E SP=8D9A
+[E15]   +00139646  CSR=0 PC=7EA0 SP=8D9A
+[E15]   +00139648  CSR=0 PC=7EA2 SP=8D9A
+[E15]   +00139650  CSR=0 PC=7EA4 SP=8D9A
+[E15]   +00139651  CSR=0 PC=7EA6 SP=8D9A
+[E15]   +00139653  CSR=0 PC=7EB6 SP=8D9A
+[E15]   +00139656  CSR=0 PC=7EB8 SP=8D9A
+[E15]   +00139658  CSR=0 PC=7EBA SP=8D9A
+[E15]   +00139661  CSR=0 PC=7EBC SP=8D9A
+[E15]   +00139663  CSR=0 PC=7EA8 SP=8D9A
+[E15]   +00139666  CSR=0 PC=7EAA SP=8D9A
+[E15]   +00139668  CSR=0 PC=7EAC SP=8D9A
+[E15]   +00139669  CSR=0 PC=7EAE SP=8D9A
+[E15] chain has executed 10383 distinct PCs
+[E15] --- keycode calibration (hypothesis: getkeycode == button code) ---
+[E15] pair [1] [2]          wrote C0 at F830 (before C0, no change)
+[E15] pair [5] [9]          wrote 00 at F831 (before 00, no change)
+[E15] calibration hypothesis holds: false
+[E15] observed: (00,10)->C0  (11,22)->00
+[E15] --- final framebuffer ---
+00|                                                            #                       #               
+01|                                                                                                    
+02|##                                                                                                  
+03|##                                                                                                  
+04|##                                                                                                  
+05|##                                                                                                  
+06|##                                                                                                  
+07|##                                                                                                  
+08|##                                                                                                  
+09|##                                                                                                  
+10|##                                                                                                  
+11|                                                                                                    
+12|                                                                                                    
+13|                                                                                                    
+14|                                                                                                    
+15|                                                                                                    
+16|                                                                                                    
+17|                                                                                                    
+18|                                                                                                    
+19|                                                                                                    
+20|                                                                                                    
+21|                                                                                                    
+22|                                                                                                    
+23|                                                                                                    
+24|                                                                                                    
+25|                                                                                                    
+26|                                                                                                    
+27|                                                                                                    
+28|                                                                                                    
+29|                                                                                                    
+30|                                                                                                    
+31|                                                                                                    
+32|                                                                                                    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[E15] framebuffer 0xF830..0xF84F (payload-recognized region):
+  F830: C0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  F840: C0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[E15] ==== E15 summary ====
+[E15] ROP chain launcher state verified: trigger at 0x8DA4 OK; restore-region model MISMATCH
+[E15] chain distinct PCs executed: 10383
+[E15] bytes written into framebuffer from key pairs: 2
+[E15] keycode calibration confirmed: false
+[E15] NOTE: chain entry state set directly (CSR=1, PC=0x54EE, SP=0x8DA4) ---
+[E15]       the emulator's own [=] processing diverges at SP=8D4C (see E14)
+[E15] total ticks: 4120000
+
+Goodbye

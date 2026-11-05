@@ -1,0 +1,14 @@
+000000   25 F2              MOV     ER2, ER2
+000002   03 C9              BC      EQ, 0000Ah
+000004   01 F0 50 4E        BL      00h:04E50h
+000008   8E F2              POP     PC
+00000A   01 92              ST      R2, [ER0]
+00000C   8E F2              POP     PC
+00000E   CE F8              PUSH    LR
+000010   05 F0              MOV     ER0, ER0
+000012   FA C9              BC      EQ, 00008h
+000014   25 F2              MOV     ER2, ER2
+000016   F9 C9              BC      EQ, 0000Ah
+000018   01 F0 EA 96        BL      00h:096EAh
+00001C   8E F2              POP     PC
+00001E   CE F8              PUSH    LR

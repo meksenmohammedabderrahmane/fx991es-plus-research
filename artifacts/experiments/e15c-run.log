@@ -1,0 +1,92 @@
+[argv] #3: key 'model' already set
+inited hex editor!
+> dofile("../../tools/experiments/e15c.lua")
+[emulib] loaded (manual-step debugger), helpers ready
+
+================================================================
+[E15c] Direct framebuffer write (non-ACE control) — Tue Nov  3 23:09:29 2026
+================================================================
+[E15c] settling 2,000,000 ticks ...
+[E15c] settled: PC=004680 SP=8DA4
+[E15c] painting gradient diagonal into 0xF840 (row 4) ...
+[E15c] framebuffer after direct write:
+00|                                                            #                       #               
+01|                                                                                                    
+02|##                                                                                                  
+03|##                                                                                                  
+04|                                                                  ########                          
+05|                                                          ########                                  
+06|                                                  ########                                          
+07|                                         ########                                                   
+08|                                 ########                                                           
+09|                         ########                                                                   
+10|                ########                                                                            
+11|        ########                                                                                    
+12|########                                                                                            
+13|                                                                                                    
+14|                                                                                                    
+15|                                                                                                    
+16|                                                                                                    
+17|                                                                                                    
+18|                                                                                                    
+19|                                                                                                    
+20|                                                                                                    
+21|                                                                                                    
+22|                                                                                                    
+23|                                                                                                    
+24|                                                                                                    
+25|                                                                                                    
+26|                                                                                                    
+27|                                                                                                    
+28|                                                                                                    
+29|                                                                                                    
+30|                                                                                                    
+31|                                                                                                    
+32|                                                                                                    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[E15c] stepping 300,000 ticks (OS redraw should wipe the pattern) ...
+[E15c]   +100000 ticks: fbhash=48A50801
+[E15c]   +200000 ticks: fbhash=A867B981
+[E15c]   +300000 ticks: fbhash=F4305AC1
+[E15c] painted row still non-zero after OS redraw: true
+[E15c] framebuffer after OS redraw:
+00|                                                            #                       #               
+01|                                                                                                    
+02|##                                                                                                  
+03|##                                                                                                  
+04|##                                                                ########                          
+05|##                                                        ########                                  
+06|##                                                ########                                          
+07|##                                       ########                                                   
+08|##                               ########                                                           
+09|##                       ########                                                                   
+10|##              ########                                                                            
+11|        ########                                                                                    
+12|########                                                                                            
+13|                                                                                                    
+14|                                                                                                    
+15|                                                                                                    
+16|                                                                                                    
+17|                                                                                                    
+18|                                                                                                    
+19|                                                                                                    
+20|                                                                                                    
+21|                                                                                                    
+22|                                                                                                    
+23|                                                                                                    
+24|                                                                                                    
+25|                                                                                                    
+26|                                                                                                    
+27|                                                                                                    
+28|                                                                                                    
+29|                                                                                                    
+30|                                                                                                    
+31|                                                                                                    
+32|                                                                                                    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[E15c] ==== E15c summary ====
+[E15c] direct framebuffer writes render immediately (SFR→screen echo works)
+[E15c] but the OS repaints on its own schedule — direct writes are transient
+[E15c] total ticks: 2000000
+
+Goodbye

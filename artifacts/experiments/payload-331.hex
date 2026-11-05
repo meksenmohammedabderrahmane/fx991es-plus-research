@@ -1,0 +1,32 @@
+# payload-331.hex — Data loader for fx-570ES+/fx-991ES+ (GY454XE ROM)
+# Provenance: Universal Casio Forum thread 7583 ("FX-82/-83GT/-115/-991ES PLUS Hacking"),
+# page 9, post #331 by user202729, 2018-05-27 ("Data loader for 570ES+").
+# Payload was compiled with user202729's compiler.py (github.com/user202729/fxesplus,
+# 570esp/compiler.py) and is stated as "Tested on the emulator". Our ROM:
+# models/fx570esplus/rom.bin, SHA-256 1a1b575f…71071 (GY454XE) — same image the
+# compiler toolchain targets.
+#
+# The 100-byte payload is written to the COMP input buffer at 0x8154; the ROP
+# chain takes over at the PC=0x2768 / SP=8DA4 execution point (see inject() in
+# models/fx570esplus/model.lua). It then:
+#   1. getkeycode() twice — byte value = k1 + k2 (sum of two hardware keycodes)
+#   2. writes that byte to (*y), y starting at 0xF830 (framebuffer row 3, col 0)
+#   3. increments y by 1 (next byte goes one address up, filling rows 3..)
+#   4. restores the stack (strcpy self-copy) and loops forever (home: goto start)
+# There is no way to break the loop except overwriting the loop itself.
+#
+# Effect: every two key presses append one fully controlled byte to the
+# framebuffer → arbitrary custom output on the 96x32 display, via ROP.
+#
+# 200 hex digits / 100 bytes:
+3130e23d3030a032303030f86a273030b244303001012c8531306c743030868b0a44303033333333ee543130b38b4f8b602730306a4f3030268c684f30303334353637383930313260b430308c46313060b43030e23d3030b02c30303333631e3130ec6c
+#
+# Keypress list (COMP-mode tokens used to type the hackstring manually on a real
+# calculator — NOT needed for the emulator/Lua-inject path):
+#   1 0 cv12 = 0 0 sin( 2 0 0 0 cv34 ∫( cs23 0 0 tan⁻( D 0 0 cs1 cs1 , ° 1 0 Pol( ×⏨ 0 0 ʳ Ans cs10 D 0 0 3 3 3 3 cv24 M 1 0 Rnd( Ans ÷ Ans - cs23 0 0 ∫( ÷ 0 0 cs22 Ran# log( ÷ 0 0 3 4 5 6 7 8 9 0 1 2 - cs30 0 0 Ran# F 1 0 - cs30 0 0 cv12 = 0 0 sin⁻( , 0 0 3 3 Abs( cs17 1 0 cv22 Pol(
+#
+# Companion posts: #328 (scrolling-text demo spec + keypress map),
+# #329 (demo video on real hardware: youtube.com/watch?v=wTOBvgXfnB4),
+# #342 (sleirsgoevy: tested on a real fx-991ES PLUS; Neg( → Abs( fix),
+# #343 (user202729: updated to Abs( | 0x63 as used in this payload),
+# #358 (sleirsgoevy: extended loader raises program limit to ~2 KiB).

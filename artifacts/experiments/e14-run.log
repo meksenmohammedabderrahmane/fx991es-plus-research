@@ -1,0 +1,24 @@
+inited hex editor!
+> dofile("../../tools/experiments/e14.lua")
+[emulib] loaded (manual-step debugger), helpers ready
+
+================================================================
+[E14] Injection + 0x2768 execution-point validation v3 — Sun Nov  1 20:36:25 2026
+[E14] ROM SHA-256 1a1b57…71071 (GY454XE), payload = post #331 data loader
+================================================================
+[E14] settling 2,000,000 ticks ...
+[E14] settled: PC=004680 SP=8DA4
+[E14] === variant B: typed 100-char line, overwrite with payload, [=] ===
+[E14] buffer after AC: 8154: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[E14] typing `100` '1' tokens (event-verified presses)
+[E14] typed 100 '1' tokens; buffer head: 8154: 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31
+[E14] buffer overwritten with payload; tail of 100 bytes: 81B4: 31 30 EC 6C 00 00 00 00 00 00 00 00 00 00 00 00
+[E14] payload repeat region 0x81B8..0x81C7: 81B8: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[E14.B] pressing [=] (code 0x30) ...
+[E14.B] pass #01 tick=008989418 PC=002768 SP=8D4C chip8[SP..SP+3]=74 70 00 00
+[E14.B] pass #02 tick=008989419 PC=002768 SP=8D4C chip8[SP..SP+3]=74 70 00 00
+[E14] variant B: 2 passes logged; trigger(SP=8DA4+EE 54 31 30): false; chain 0:54EE: false
+[E14] variant B final PC=0:004680 SP=8DA4 mode=05
+[E14] ==== E14 complete ====
+
+Goodbye

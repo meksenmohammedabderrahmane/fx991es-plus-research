@@ -1,0 +1,50 @@
+inited hex editor!
+> dofile("../../tools/experiments/e15b.lua")
+[emulib] loaded (manual-step debugger), helpers ready
+
+================================================================
+[E15B] Entry-state sweep for payload-as-code — Sun Nov  1 20:51:43 2026
+================================================================
+[E15B] --- entry A CSR=0 PC=54EE: CSR=0 PC=54EE SP=8DA4 ---
+[E15B]   60 samples, in-buffer: 0
+[E15B]   distinct non-buffer PCs: 0x0054EE 0x019F2A 0x01A04C 0x019716 0x01A21A 0x01A350 0x019F38 0x01A398 0x0196FE 0x01A252 0x019F66 0x01AA54
+[E15B]   top PCs:
+[E15B]     0054EE x18
+[E15B]     01A292 x1
+[E15B]     01A1DC x1
+[E15B]     0196FE x1
+[E15B]     01A060 x1
+[E15B]     017948 x1
+[E15B]   F830/F831 now: 00 00
+[E15B] --- entry B CSR=0 PC=8C26: CSR=0 PC=8C26 SP=8DA4 ---
+[E15B]   60 samples, in-buffer: 0
+[E15B]   distinct non-buffer PCs: 0x007EBC 0x007EB8 0x007EAA 0x007EB4 0x007EB2 0x007EBA 0x007EAC 0x007EB6 0x007EA8 0x007EAE 0x007EB0
+[E15B]   top PCs:
+[E15B]     007EB2 x10
+[E15B]     007EBA x9
+[E15B]     007EBC x8
+[E15B]     007EA8 x6
+[E15B]     007EB6 x6
+[E15B]     007EAA x4
+[E15B]   F830/F831 now: 00 00
+[E15B] --- entry C CSR=0 PC=8154: CSR=0 PC=8154 SP=8DA4 ---
+[E15B]   60 samples, in-buffer: 0
+[E15B]   distinct non-buffer PCs: 0x010106 0x01B0D6 0x01B0D4 0x01B05E 0x024832 0x019F38 0x019F36 0x01B04A 0x01B040 0x010100 0x01B066 0x019F3E
+[E15B]   top PCs:
+[E15B]     019F38 x7
+[E15B]     01B0D4 x7
+[E15B]     010100 x6
+[E15B]     01B04A x4
+[E15B]     01B0D6 x4
+[E15B]     024832 x4
+[E15B]   F830/F831 now: 00 00
+[E15B] --- entry D CSR=0 PC=8C26 SP=8D9E: CSR=0 PC=8C26 SP=8D9E ---
+[E15B]   60 samples, in-buffer: 0
+[E15B]   distinct non-buffer PCs: 0x007EA8 0x004836
+[E15B]   top PCs:
+[E15B]     004836 x55
+[E15B]     007EA8 x5
+[E15B]   F830/F831 now: 00 00
+[E15B] sweep done, total ticks 4000000
+
+Goodbye

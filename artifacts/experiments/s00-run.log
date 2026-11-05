@@ -1,0 +1,11 @@
+inited hex editor!
+> dofile("../../tools/experiments/s00.lua")
+[emulib] loaded, helpers ready
+
+================================================================
+[S00] Boot observation — Sun Nov  1 20:13:58 2026
+[S00] ROM under test: models/fx570esplus/rom.bin
+[S00] Goal: boot timeline / screen-regime / input-buffer state
+================================================================
+> 
+Goodbye

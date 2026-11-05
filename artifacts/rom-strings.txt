@@ -1,0 +1,262 @@
+000008  2H2H2H2H2H2H2H2H2H2H2H2H2H
+000050  !@@@@@!
+000097  |ABzG
+00011E  FGonVVFF
+00013A  ccc|he
+00014C  FFFEEED81155UUJ
+00015F  R"!QQ
+0001D4  jWVVVVV
+0001DE  11111.
+000201  FFFEE
+00020A  155UU
+000221   >8HHH
+000228  HHH8`
+000252  pUZZUPp2KJJ
+0002C5  8!!!!!
+0002D2  ##?##
+00036B  fVOFF
+000395  ccc{ccc
+0003A8  BE$DD
+0004A8  FoVVF
+0004C7  FEED815UU
+000521  jWVVV
+000575  uZZUp2K
+00062F  Kj[JJ
+000694  rRRRrw
+00069B  wAwWTWq
+0006A3  wEqQqwUwQw
+0006B9  wUw&UvUV6EEE6wDwDtRuuURvUVe5UU"RR
+0006FF  bdg@ 
+000725  9FFFF9
+000740  """""
+00075E  9FF9J
+000844  MAABCDEFXYjklm:_
+00085B  jklmi:
+000864  jklmi%
+00086D  jkilm:_
+000875  AC Break
+00087E  Syntax ERROR
+00088B  Math ERROR
+000896  Insufficient MEM
+0008A7  Stack ERROR
+0008B3  Argument ERROR
+0008C2  Dimension ERROR
+0008D2  Can't Solve
+0008DE  Time Out
+0008E7  Variable ERROR
+0008F6  NULL ERROR
+000921  ]:Goto
+000947                  
+000958  Fix 0~9?
+000961  Sci 0~9?
+00096A  Norm 1~2?
+000974  CONTRAST
+00097E  LIGHT       DARK
+000992  ]        [
+0009A4  CONSTANT
+0009AD  Number 01~40?
+0009BE  CONVERSION
+0009C9  Number 01~40?
+0009DA  Clear?
+0009E1  1:Setup 2:Memory
+0009F2  3:All
+0009FA  Clear Setup?
+000A07  Clear Memory?
+000A15  Reset All?
+000A20     Reset All
+000A2D  [=]   :Yes
+000A38  [AC]  :Cancel
+000A46     Complete!
+000A53   Press [AC] key
+000A63  1:Dim   2:Data
+000A76  1:Dim   2:Data
+000A85  3:MatA  4:MatB
+000A94  5:MatC  6:MatAns
+000AA5  7:det   8:Trn
+000AB4  1:MatA  2:MatB
+000AC3  3:MatC
+000ACC  1:3$3   2:3$2
+000ADA  3:3$1   4:2$3
+000AE8  5:2$2   6:2$1
+000AF6  1:1$3   2:1$2
+000B04  3:1$1
+000B0C  Matrix?
+000B14  MatA(m$n) m$n?
+000B23  MatB(m$n) m$n?
+000B32  MatC(m$n) m$n?
+000B41  1:Dim   2:Data
+000B54  1:Dim   2:Data
+000B63  3:VctA  4:VctB
+000B72  5:VctC  6:VctAns
+000B83  7:Dot
+000B8A  1:VctA  2:VctB
+000B99  3:VctC
+000BA2  1:3     2:2
+000BB1  Vector?
+000BB9  VctA(m) m?
+000BC4  VctB(m) m?
+000BCF  VctC(m) m?
+000BDA  1:arg   2:Conjg
+000BFC  1:and   2:or
+000C09  3:xor   4:xnor
+000C18  5:Not   6:Neg
+000C28  1:d     2:h
+000C34  3:b     4:o
+000C46       2:
+000C56  1:sinh  2:cosh
+000C65  3:tanh  4:sinh
+000C75  5:cosh
+000C7C   6:tanh
+000C87  1:Ins   2:Del-A
+000CA0     2:
+000CB1     2:
+000CBE     4:
+000CC9  xy   6:
+000CD9  y  8:
+000CE2  1:n     2:
+000CF1  x    4:sx
+000CFE  1:n     2:
+000D0D  x    4:sx
+000D1A       6:
+000D29  1:minX  2:maxX
+000D3C  1:minX  2:maxX
+000D4B  3:minY  4:maxY
+000D5D  1:P(    2:Q(
+000D6A  3:R(    4:
+000D7D       2:
+000D86  3:r     4:
+000D9B       2:
+000DA7       4:
+000DB5      6:
+000DBF  1:a:b=X:d
+000DC9  2:a:b=c:X
+000DD6  1:=     2:
+000DE2  3:>     4:<
+000DF1       6:
+000E01  +bX+c
+000E10  +cX+d
+000E1E  +bX+c>0
+000E2B  +bX+c<0
+000E38  +bX+c
+000E45  +bX+c
+000E57  +cX+d>0
+000E68  +cX+d<0
+000E79  +cX+d
+000E8A  +cX+d
+000E93  Frequency?
+000E9E  1:ON    2:OFF
+000EAF  Recur Decimal?
+000EBE  1:ON    2:OFF
+000ECF  Complex Result?
+000EDF  1:a+b
+000EE5    2:r
+000EF0  Decimal Point?
+000EFF  1:Dot   2:Comma
+000F12  Result Format?
+000F21  1:MathO 2:LineO
+000F34  Solve for 
+000F3F  Start?
+000F46  End?  
+000F4D  Step? 
+000F54  a:b=X:d
+000F5C  a:b=c:X
+000F64  FALSE
+000F73  No-Solution
+000F95  AP"XQh
+000F9F  CWB&xs
+000FB5  fbh''4
+000FC7  dUaudB)4
+000FDE  syD)4
+00107B  h`c4r
+00108F  "yu6r
+0010AC  ERROR
+0010C7  Continue:[=]
+0010D4  f(X)=
+001424  minXmaxXminYmaxYR
+001441  %Fe()N
+001448  +,-.0123456789:=Vm
+001474  ![\]^`NotNegAbs
+00148C  d/dxPolRecandor
+0014A6  {}xorxnor
+0014B4  Conjg
+0014BB  AnsRan#
+0014D0  Conv 
+0014E3  tRndc
+0014F5  detTrnRanInt#arg
+00150B  MatBMatCMatAnsVctBVctCVctAnsQ
+001529  tatmcm
+00154D  n mile
+001561  gal(US)
+00156C  gal(UK)
+00157B  kmm/s
+0015B5  kgf/cm
+0015C1  kgf*m
+0015CC  lbf/in
+0015EB  F&R<>
+001611  "#$&'*;@xyz
+001648  c1&c3Fc5fc7
+0016B5  eB'_q
+0016BE  5334c3 
+00174E  !&b#Fb`
+001765  6%fb'v38
+00177A  4B34DS4Fs4H
+001792  5R35TS5Vs5X
+001819  g&!cp
+001873  )sRSv
+0018F5  `!vHp
+0019B5  /h.2.
+0019BD  .f/P/./
+0019D5  0p0Z042
+001AE9  5B5<7
+001AEF  60D`8vGzG
+001B09  0R1l1
+001B69  ,:,L,
+001B87  mlm0m
+001B9D  K0KDK
+001BA7  K|qPq
+001CBD  @e2YqU&
+001DBD  kNkNk
+001DCF  m mrmBm|mhmrm
+001EBB  qrstuvabcdefQRSTUVABCDEF12345!"#$%
+001EE8  Press AC
+001EF1  TEST OK
+001EF9  Reset All
+001F03  DIAGNOSTIC 
+002032  ABCDEFXYTGHIJ
+00204F  hcjki:
+002056  123+-
+00205E  456NO
+0020F6  ABCDEF
+002196  123+-
+00219E  456NO
+002216  1:COMP  2:CMPLX 
+002227  3:STAT  4:BASE-N
+002238  5:EQN   6:MATRIX
+002249  7:TABLE 8:VECTOR
+00225A  1:MthIO 2:LineIO
+00226B  3:Deg   4:Rad   
+00227C  5:Gra   6:Fix   
+00228D  7:Sci   8:Norm  
+00229F  1:ab/c  2:d/c   
+0022B0  3:CMPLX 4:STAT  
+0022C1  5:Disp  6:
+0022D4  1:1-VAR 2:
+0022EA   4:ln X
+0022F5  ^X   6:
+002309   8:1/X
+002310  1:Type  2:Data
+00231F  3:Edit
+002329  1:Type  2:Data
+002338  3:Sum   4:Var
+002346  5:Distr 6:MinMax
+002359  1:Type  2:Data
+002368  3:Sum   4:Var
+002376  5:Reg   6:MinMax
+0023AC  +bX+c=0
+0023BD  +cX+d=0
+004C5E  08099y
+004CDF  )Ig)P
+014C76  (Rdt*
+01518C  (Rst 
+0155C8  (Rst-
+01FFF4  GY454XE )

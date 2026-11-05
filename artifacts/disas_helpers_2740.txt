@@ -1,0 +1,45 @@
+000000   0D 00              MOV     R0, #13
+000002   0A 71              CMP     R1, #10
+000004   04 C1              BC      LT, 0000Eh
+000006   0D 71              CMP     R1, #13
+000008   02 C2              BC      GT, 0000Eh
+00000A   10 80              MOV     R0, R1
+00000C   F8 10              ADD     R0, #248
+00000E   1F FE              RT
+000010   05 F0              MOV     ER0, ER0
+000012   02 C9              BC      EQ, 00018h
+000014   00 F0 82 8B        B       00h:08B82h
+000018   1F FE              RT
+00001A   CE F8              PUSH    LR
+00001C   05 F0              MOV     ER0, ER0
+00001E   04 C9              BC      EQ, 00028h
+000020   25 F2              MOV     ER2, ER2
+000022   03 C9              BC      EQ, 0002Ah
+000024   01 F0 50 4E        BL      00h:04E50h
+000028   8E F2              POP     PC
+00002A   01 92              ST      R2, [ER0]
+00002C   8E F2              POP     PC
+00002E   CE F8              PUSH    LR
+000030   05 F0              MOV     ER0, ER0
+000032   FA C9              BC      EQ, 00028h
+000034   25 F2              MOV     ER2, ER2
+000036   F9 C9              BC      EQ, 0002Ah
+000038   01 F0 EA 96        BL      00h:096EAh
+00003C   8E F2              POP     PC
+00003E   CE F8              PUSH    LR
+000040   6E FC              PUSH    XR12
+000042   6E F4              PUSH    XR4
+000044   05 FC              MOV     ER12, ER0
+000046   25 FE              MOV     ER14, ER2
+000048   00 91              L       R1, [ER0]
+00004A   10 85              MOV     R5, R1
+00004C   00 00              MOV     R0, #0
+00004E   F0 21              AND     R1, #240
+000050   31 C8              BC      NE, 000B4h
+000052   EA F0              LEA     [ER14]
+000054   00 E2              MOV     ER2, #0
+000056   55 90              ST      XR0, [EA+]
+000058   55 90              ST      XR0, [EA+]
+00005A   55 90              ST      XR0, [EA+]
+00005C   55 90              ST      XR0, [EA+]
+00005E   55 90              ST      XR0, [EA+]
